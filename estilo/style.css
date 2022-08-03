@@ -36,3 +36,18 @@ small > a {
 small > a:hover {
     color: rgb(255, 255, 255);
 }
+
+.css > i:hover{
+    transition: 0.5s;
+ 
+    color: #264de4;
+}
+.html > i:hover{
+    transition: 0.5s;
+    color:  #e34c26;
+}
+
+.javascript > i:hover{
+    transition: 0.5s;
+    color: #F0DB4F;
+}
