@@ -22,3 +22,17 @@ section {
 #img-android {
     text-align: center;
 }
+
+small {
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+small > a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+small > a:hover {
+    color: rgb(255, 255, 255);
+}
