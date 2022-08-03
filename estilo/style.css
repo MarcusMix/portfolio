@@ -1,3 +1,11 @@
+body {
+    max-width: 1000px;
+    min-height: 350px;
+    margin: auto;
+}
+
+
+
 .navbar {
     text-align: center;
 }
@@ -6,3 +14,11 @@ section {
     margin-top: 100px;
 }
 
+.logo {
+    /* width: 100px; */
+    height: 50px;
+}
+
+#img-android {
+    text-align: center;
+}
