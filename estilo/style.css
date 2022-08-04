@@ -1,10 +1,53 @@
-body {
-    max-width: 1000px;
-    min-height: 350px;
-    margin: auto;
+/* fonte */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,400;1,500;1,600;1,700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
 }
 
 
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #0d0d0d;
+    max-width: 800px;
+    min-height: 350px;
+    margin: 0 auto;
+    padding-top: 0;
+    background-color: #3e4759;
+}
+
+.cabeca {
+    color: white;
+}
+
+section, main {
+    margin-top: 40px;
+    padding: 10px;
+    background-color:#949ba6;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.247);
+}
+
+#habilidades {
+    background-color: #f2695c;
+}
+
+aside {
+    width: 390px;
+    text-align: center;
+    max-width: 430px;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #949ba6 ;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.247);
+} 
+
+#img-principal {
+    padding: 20px;
+}
 
 .navbar {
     text-align: center;
@@ -19,27 +62,18 @@ section {
     height: 50px;
 }
 
+
 #img-android {
     text-align: center;
 }
 
-small {
-    font-size: 1.2rem;
-    align-items: center;
-}
-
-small > a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-small > a:hover {
-    color: rgb(255, 255, 255);
+.img-projeto {
+    border-radius: 10px;
+    width: 300px;
 }
 
 .css > i:hover{
     transition: 0.5s;
- 
     color: #264de4;
 }
 .html > i:hover{
@@ -50,4 +84,50 @@ small > a:hover {
 .javascript > i:hover{
     transition: 0.5s;
     color: #F0DB4F;
+}
+
+.bootstrap > i:hover{
+    transition: 0.5s;
+    color: #563d7c;
+}
+
+.react > i:hover{
+    transition: 0.5s;
+    color: #61DBFB;
+}
+
+.vue > i:hover{
+    transition: 0.5s;
+    color: #42b883;
+}
+
+.link-contato {
+    color: black;
+}
+
+.github > a:hover{
+    transition: 0.5s;
+    color: #d3d5d8;
+}
+
+.linkedin > a:hover{
+    transition: 0.5s;
+    color: #0072b1;
+}
+
+.email > a:hover{
+    transition: 0.5s;
+    color: #a139b6;
+}
+
+.icons {
+    text-align: center;
+}
+
+footer {
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    background-color: #f2695c;
 }
