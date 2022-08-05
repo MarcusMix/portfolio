@@ -7,10 +7,10 @@ VanillaTilt.init(document.querySelectorAll(".img-projetos"), {
   speed: 300,
 }) 
 
-VanillaTilt.init(document.querySelectorAll(".icons"), {
-  max: 30,
-  speed: 600,
-}) 
+// VanillaTilt.init(document.querySelectorAll(".icons"), {
+//   max: 30,
+//   speed: 600,
+// }) 
 
 // DIGITACAO EFEITO 
 
