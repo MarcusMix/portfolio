@@ -15,15 +15,52 @@ body {
     min-height: 350px;
     margin: 0 auto;
     padding-top: 0;
-    background-color: #3e4759;
+    background: url('../imgs/pc-codigo.jpg');
+    /* backdrop-filter: blur(10px); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .cabeca {
     color: white;
 }
 
+.efeito-vidro {
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+
+.img-projetos {
+    max-width: 100%;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.274);
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.flex > div {
+    flex: 1 2 300px;
+    margin: 10px;
+}
+
+.flex > div > p {
+    font-weight: 500;
+}
+
 section, main {
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 10px;
     background-color:#949ba6;
     border-radius: 10px;
@@ -31,7 +68,7 @@ section, main {
 }
 
 #habilidades {
-    background-color: #f2695c;
+    font-weight: 600;
 }
 
 aside {
@@ -41,7 +78,7 @@ aside {
     margin-top: 40px;
     padding: 10px;
     border-radius: 10px;
-    background-color: #949ba6 ;
+    background-color: #949ba6;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.247);
 } 
 

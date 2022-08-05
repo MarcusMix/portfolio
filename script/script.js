@@ -18,7 +18,12 @@ function digitacao(texto, contador) {
 digitacao("E eu sou Desenvolvedor Web", 0);
 
 
+VanillaTilt.init(document.querySelectorAll(".img-projetos"), {
+  max: 15,
+  speed: 300,
+}) 
+
 VanillaTilt.init(document.querySelectorAll(".icons"), {
-  max: 25,
+  max: 30,
   speed: 600,
 }) 
