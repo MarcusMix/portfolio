@@ -1,5 +1,5 @@
 // AOS ANIMATION
-  // AOS.init();
+  AOS.init();
 
 // DIGITACAO EFEITO
 
