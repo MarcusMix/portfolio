@@ -181,7 +181,25 @@ section, main {
 
 .email > a:hover{
     transition: 0.5s;
-    color: #a139b6;
+    color: #75e3ff;
+}
+
+#link-nav {
+    background: linear-gradient(0deg,#54b3d6, #54b3d6) 
+    no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+}
+  
+#link-nav:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+}
+
+
+#link-nav {
+    padding-bottom: 2px;
+    --bg-h: 2px;
 }
 
 .icons {
