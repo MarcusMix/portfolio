@@ -13,9 +13,10 @@ body {
     color: #0d0d0d;
     margin: 0 auto;
     padding-top: 0;
-    background: url('../imgs/caracteres.jpg');
+    background: url('../imgs/pc-codigo.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     background-position: right center;
 }
 
@@ -106,35 +107,10 @@ section, main {
     font-weight: 600;
 }
 
-/* aside {
-    width: 390px;
-    text-align: center;
-    max-width: 430px;
-    margin-top: 40px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #949ba6;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.247);
-}  */
-
 #img-principal {
     padding: 20px;
+    max-width: 100%;
 }
-
-/* .logo {
-    /* width: 100px; */
-    /* height: 50px; */
-
-
-/* 
-#img-android {
-    text-align: center;
-}
-
-.img-projeto {
-    border-radius: 10px;
-    width: 300px;
-} */
 
 .css > i:hover{
     transition: 0.5s;
@@ -264,3 +240,96 @@ footer a:hover {
 }
 
 /* botao  */
+
+/* animação loading  */
+
+div > .lds-roller {
+    width: 68%;
+    margin: 20px;
+}
+.lds-roller {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  .lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+  }
+  .lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fff;
+    margin: -4px 0 0 -4px;
+  }
+  .lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+  }
+  .lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+  }
+  .lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+  }
+  .lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+  }
+  .lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+  }
+  .lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+  }
+  .lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+  }
+  .lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+  }
+  .lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+  }
+  .lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+  }
+  .lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+  }
+  .lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+  }
+  .lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+  }
+  .lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+  }
+  .lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+  }
+  .lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+  }
+  @keyframes lds-roller {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+/* animação loading  */
