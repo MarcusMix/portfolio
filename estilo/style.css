@@ -1,22 +1,15 @@
 /* fonte */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,400;1,500;1,600;1,700&display=swap');
 
-
-
-
 * {
     padding: 0;
     margin: 0;
 }
 
-
-
-
 body {
     font-family: 'Raleway', sans-serif;
     color: #0d0d0d;
-    max-width: 800px;
-    min-height: 350px;
+
     margin: 0 auto;
     padding-top: 0;
     background: url('../imgs/codigo-wallpaper.jpg');
@@ -32,8 +25,8 @@ body {
     align-items: center;
 }
 
-.cabeca {
-    color: white;
+.apresentacao {
+    font-weight: 700;
 }
 
 .apresentacao::after {
@@ -67,8 +60,8 @@ body {
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 13.5px );
     -webkit-backdrop-filter: blur( 13.5px );
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
     border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
 
@@ -97,11 +90,23 @@ body {
 }
 
 section, main {
-    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    /* align-items: center; */
+    max-width: 800px;
+    min-width: 350px;
+    margin-top: 50px;
+    flex: 1 2 300px;
     padding: 10px;
     background-color:#949ba6;
     border-radius: 10px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.247);
+}
+
+.cabeca {
+    color: white;
+    margin-top: 100px;
 }
 
 .habilidades, 
@@ -110,7 +115,7 @@ section, main {
     font-weight: 600;
 }
 
-aside {
+/* aside {
     width: 390px;
     text-align: center;
     max-width: 430px;
@@ -119,26 +124,28 @@ aside {
     border-radius: 10px;
     background-color: #949ba6;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.247);
-} 
+}  */
 
 #img-principal {
     padding: 20px;
 }
 
-.navbar {
+/* .navbar {
     text-align: center;
-}
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-self: center;
+} */
 
-section {
-    margin-top: 100px;
-}
-
-.logo {
+/* .logo {
     /* width: 100px; */
-    height: 50px;
-}
+    /* height: 50px; */
 
 
+/* 
 #img-android {
     text-align: center;
 }
@@ -146,7 +153,7 @@ section {
 .img-projeto {
     border-radius: 10px;
     width: 300px;
-}
+} */
 
 .css > i:hover{
     transition: 0.5s;
@@ -207,8 +214,8 @@ footer {
     background-color: #f2695c;
     padding-top: 15px;
     padding-right: 15px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
 }
 
 footer a {
@@ -221,9 +228,9 @@ footer a:hover {
     color: magenta;
 }
 
-/* botao  */
+/* botao projetos */
 
-  .btn{
+  .btn {
     width: 50%;
     position: relative;
     display: block;
@@ -238,7 +245,7 @@ footer a:hover {
     overflow: hidden;
     transition: 1s all ease;
   }
-  .btn::before{
+  .btn::before {
     background: #75e3ff;
     content: "";
     position: absolute;
@@ -249,12 +256,12 @@ footer a:hover {
     transition: all 0.6s ease;
   }
   
-  .btn1::before{
+  .btn1::before {
     width: 0%;
     height: 100%;
   }
   
-  .btn1:hover::before{
+  .btn1:hover::before {
     width: 100%;
   }
 
