@@ -10,6 +10,8 @@
 }
 
 
+
+
 body {
     font-family: 'Raleway', sans-serif;
     color: #0d0d0d;
@@ -22,6 +24,12 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cabeca {
