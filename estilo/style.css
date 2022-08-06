@@ -13,10 +13,10 @@ body {
     color: #0d0d0d;
     margin: 0 auto;
     padding-top: 0;
-    background: url('../imgs/codigo-wallpaper.jpg');
+    background: url('../imgs/caracteres.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: right center;
 }
 
 .apresentacao {
