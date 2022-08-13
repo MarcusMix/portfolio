@@ -241,6 +241,10 @@ footer a:hover {
 
 /* animação loading  */
 
+#loading {
+  margin-top: 65px;
+}
+
 div > .lds-roller {
   width: 68%;
   margin: 20px;
