@@ -13,7 +13,10 @@
 
     <style>
 
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&display=swap');
+
         body {
+            font-family: 'Outfit', sans-serif;
             background: url('imgs/back-balon.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -22,10 +25,23 @@
         }
 
         h1 {
-            color: rgb(0, 0, 0);
+            color: #fff;
+            text-shadow: 2px 2px #00000096;
             font-size: 50px;
             text-align: center;
             margin: 20px;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+
+        .logo {
+            display: flex;
+            justify-self: center;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 200px;
         }
 
         .container {
@@ -87,7 +103,11 @@
             color: #25d366;
         }
 
-        
+        @media (max-width: 650px) {
+            .flex {
+                width: 300px;
+            }
+        }
 
 
 
@@ -96,6 +116,9 @@
 <body>
     <h1>Encurtador de Redes Sociais</h1>
     <!-- <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> -->
+    <main class="logo">
+        <img src="imgs/img.jpg" alt="">
+    </main>
     <section class="container">
         <div class="flex">
             <a href="https://www.instagram.com/marcus.sandi/">
