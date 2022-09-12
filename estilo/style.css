@@ -16,11 +16,16 @@ body {
     color: #0d0d0d;
     margin: 0 auto;
     padding-top: 0;
-    background: url('../imgs/codigo-wallpaper-otimizado.jpg');
+    background: url('../imgs/pexels-pixabay-270488.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position:  center left;
+    /* backdrop-filter: blur(5px); */
+}
+
+.img-area {
+  
 }
 
 .parag {
@@ -203,7 +208,7 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-    color: magenta;
+    color: rgb(0, 225, 255);
 }
 
 /* botao projetos */
@@ -253,7 +258,7 @@ footer a:hover {
 }
 
 div > .lds-roller {
-  width: 68%;
+  width: 30%;
   margin: 20px;
 }
 .lds-roller {
