@@ -2,7 +2,7 @@
 
 Um site para mostrar meus projetos feitos, minhas habilidades e contatos.
 
-link: https://marcus-sandi.tech
+## Link: https://marcus-sandi.tech
 
 
 ## Autores
@@ -10,10 +10,6 @@ link: https://marcus-sandi.tech
 - [@MarcusMix](https://www.github.com/MarcusMix)
 
 
-
-
-
-## Documentação de cores
 
 ## 🚀 Sobre mim
 Eu sou um estudante de ADS, buscando novos conhecimentos!
