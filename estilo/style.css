@@ -16,16 +16,12 @@ body {
     color: #0d0d0d;
     margin: 0 auto;
     padding-top: 0;
-    background: url('../imgs/pexels-pixabay-270488.jpg');
+    background: url('../imgs/pexels-danny-meneses-943096.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position:  center left;
+    background-position:  center center;
     /* backdrop-filter: blur(5px); */
-}
-
-.img-area {
-  
 }
 
 .parag {
