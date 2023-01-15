@@ -18,9 +18,23 @@
     rel="stylesheet">
 </head>
 <style>
+  @font-face {
+    font-family: BrickSans-Bold;
+    src: url('fonts/BrickSans-Bold.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: GlacialIndifference-Regular;
+    src: url('fonts/GlacialIndifference-Regular.otf') format('opentype');
+  }
+
+  :root {
+    --cor-roxo: #a25cff;
+  }
+
   body {
     font-family: 'Poppins', sans-serif;
-    background-color: #212529;
+    background-color: #05162b;
   }
 
   .text-white,
@@ -35,7 +49,9 @@
   }
 
   .inicio p {
-    color: white;
+    color: #fff;
+    font-family: GlacialIndifference-Regular;
+    font-size: 25px;
   }
 
   .apresentacao {
@@ -62,11 +78,12 @@
     text-align: center;
     color: rgb(255, 255, 255);
     padding: auto;
-    margin-bottom: 40px;
+    margin: 40px;
   }
 
   .p {
     font-size: 20px;
+    color: rgb(177, 65, 65);
   }
 
   footer {
@@ -81,9 +98,31 @@
   }
 
   h1 {
-    font-size: 60px;
+    font-family: BrickSans-Bold;
+    font-size: 100px;
     text-align: center;
-    color: white;
+    color: var(--cor-roxo);
+  }
+
+  h2 {
+    font-size: 40px;
+    font-family: Poppins;
+    text-align: center;
+    color: #fff;
+  }
+
+  .comofunciona {
+    display: inline;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+  }
+
+  .comofunciona p {
+    color: #fff;
+    text-align: center;
+    margin: 0 20%;
+    padding: 20px;
   }
 
   p {
@@ -91,6 +130,15 @@
     color: rgb(0, 0, 0);
     padding: 0;
     margin: 0;
+  }
+
+  h5 {
+    text-align: center;
+  }
+
+  .fa-brands {
+    color: #fff;
+    padding: 20px;
   }
 </style>
 
@@ -101,7 +149,7 @@
     <div class="container-fluid">
       <div class="icon">
         <i class="fa-sharp fa-solid fa-desktop fa-2xl"></i>
-        <a class="navbar-brand text-white" href="#">PC GAMER SORTEIO</a>
+        <a class="navbar-brand text-white" href="#">Mega Sorteios</a>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -110,35 +158,35 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav bg-dark">
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">Tela inicial</a>
+            <a class="nav-link" href="#comofunciona">Como funciona?</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Quem somos?</a>
+            <a class="nav-link" href="#preco">Preços</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Preços</a>
+            <a class="nav-link" href="#midias">Contatos</a>
           </li>
           <li class="nav-item dropdown bg-dark">
             <a class="nav-link dropdown-toggle bg-dark" href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
-              Computadores
+              Sorteios
             </a>
             <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item" href="#">Computadores</a></li>
               <li><a class="dropdown-item" href="#">Mouse</a></li>
               <li><a class="dropdown-item" href="#">Teclados</a></li>
               <li><a class="dropdown-item" href="#">Placa de Vídeo</a></li>
-            </ul>
+              </ul>
           </li>
+          </div>
         </ul>
       </div>
     </div>
   </nav>
 
   <div class="inicio">
-    <h1 class="apresentacao">PC GAMER 15K</h1>
-    <p>Você irá poder escolher entre, um Computador montado com o valor ganho</p>
-    <p>Ou poderá escolher o valor em dinheiro, para poder usar como desejar!</p>
-    <p>Curtiu? Dá uma olhada nas fotos seu mazanza!</p> <br>
+    <h1 class="apresentacao">MEGA SORTEIOS</h1>
+    <p>Seus sonhos bem pertinho de você</p>
   </div>
 
   <div id="carouselExampleDark" class="carousel carousel-transparent slide">
@@ -150,24 +198,24 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
-        <img src="pcgamer1.jpg" class="d-block w-100" alt="...">
+        <img src="images/2monitor.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block bg-transparent text-body">
           <h5 style="font-size: 50px; color: white;">PC GAMER 15K</h5>
-          <p style="font-size: 30px; color: white;">Lorem ipsum dolor sit amet consectetur.</p>
+          <p style="font-size: 30px; color: white;"></p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="2000">
-        <img src="pcgamer2.jpg" class="d-block w-100" alt="...">
+        <img src="images/setup-monstro.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block bg-transparent text-body">
           <h5 style="font-size: 50px; color: white;">PC GAMER 7K</h5>
-          <p style="font-size: 50px; color: white;">Lorem ipsum dolor sit amet consectetur.</p>
+          <p style="font-size: 50px; color: white;"></p>
         </div>;
       </div>
       <div class="carousel-item">
-        <img src="pcgamer3jpg.jpg" class="d-block w-100" alt="...">
+        <img src="images/foro1.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block bg-transparent text-body">
           <h5 style="font-size: 50px; color: white;">PERIFÉRICOS</h5>
-          <p style="font-size: 50px; color: white;">Lorem ipsum dolor sit amet consectetur.</p>
+          <p style="font-size: 50px; color: white;"></p>
         </div>
       </div>
     </div>
@@ -183,18 +231,16 @@
   </div>
   <p class="p">Fotos merementes ilustrativas*</p>
   <div class="outros">
-    <h1>Nossos outros modelos...</h1>
+    <h1>Mais detalhes dos sorteios...</h1>
   </div>
 
-  <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="row row-cols-1 row-cols-md-2 g-4" id="preco">
     <div class="col">
       <div class="card">
-        <img src="card1.jpg" class="card-img-top" alt="...">
+        <img src="/images/card1.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptates animi
-            officia quisquam consequatur fugit impedit non pariatur illo ducimus sunt repudiandae minima cum perferendis
-            necessitatibus quod odit, optio sit?.</p>
+          <h5 class="card-title">PC GAMER 15k</h5>
+          <p class="card-text">Setup PC gamer completo, com todos periférios no valor de R$15.000,00 ou se desejar, resgatar o prêmio em dinheiro.</p>
         </div>
       </div>
       <p class="text-decoration-line-through fs-4 text-danger">De R$30,00</p>
@@ -202,12 +248,10 @@
     </div>
     <div class="col">
       <div class="card">
-        <img src="card2.jpg" class="card-img-top" alt="...">
+        <img src="images/card2.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptates animi
-            officia quisquam consequatur fugit impedit non pariatur illo ducimus sunt repudiandae minima cum perferendis
-            necessitatibus quod odit, optio sit?.</p>
+          <h5 class="card-title">PC GAMER 7K</h5>
+          <p class="card-text">PC gamer, no valor de R$7.000,00 ou se desejar, resgatar o prêmio em dinheiro.</p>
         </div>
       </div>
       <p class="text-decoration-line-through fs-4 text-danger">De R$17,00</p>
@@ -215,28 +259,24 @@
     </div>
     <div class="col">
       <div class="card">
-        <img src="card3.jpg" class="card-img-top" alt="...">
+        <img src="images/card3.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptates animi
-            officia quisquam consequatur fugit impedit non pariatur illo ducimus sunt repudiandae minima cum perferendis
-            necessitatibus quod odit, optio sit?.</p>
+          <h5 class="card-title">Periféricos</h5>
+          <p class="card-text">R$1000,00 em periféricos que você quiser! ou se desejar, resgatar o prêmio em dinheiro.</p>
         </div>
       </div>
-      <p class="text-decoration-line-through fs-4 text-danger">De R$30,00</p>
-      <button type="button" class="btn btn-outline-success">Por R$7,00</button>
+      <p class="text-decoration-line-through fs-4 text-danger">De R$12,00</p>
+      <button type="button" class="btn btn-outline-success">Por R$5,00</button>
     </div>
     <div class="col">
       <div class="card">
-        <img src="card4.jpg" class="card-img-top" alt="...">
+        <img src="images/card4.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptates animi
-            officia quisquam consequatur fugit impedit non pariatur illo ducimus sunt repudiandae minima cum perferendis
-            necessitatibus quod odit, optio sit?.</p>
+          <h5 class="card-title">PC GAMER 3K</h5>
+          <p class="card-text">PC gamer, no valor de R$3.000,00 ou se desejar, resgatar o prêmio em dinheiro.</p>
         </div>
       </div>
-      <p class="text-decoration-line-through fs-4 text-danger">De R$17,00</p>
+      <p class="text-decoration-line-through fs-4 text-danger">De R$15,00</p>
       <button type="button" class="btn btn-outline-success">Por R$7,00</button>
     </div>
   </div>
@@ -253,11 +293,38 @@
     <br>
   </div>
 
+  <div id="comofunciona" class="comofunciona">
+    <h1>Como funciona?</h1>
+    <div>
+      <h2>1. Escolha o sorteio</h2>
+      <p>Escolha o prêmio que gostaria de concorrer, verifique a descrição, regulamento do sorteio e fotos. Em caso de dúvidas entre em contato com o administrador.</p>
+    </div>
 
-  <footer>
-    Desenvolvido por Marcus Sandi
+    <div>
+      <h2>2. Selecione seus bilhetes</h2>
+      <p>Você pode escolher quantos bilhetes desejar! Mais bilhetes, mais chances de ganhar.</p>
+    </div>
+
+    <div>
+      <h2>3. Faça o pagamento</h2>
+      <p>Faça o pagamento no(s) método(s) de pagamento(s) disponíveis no site.</p>
+    </div>
+
+    <div>
+      <h2>4. Aguarde o sorteio</h2>
+      <p>Aguarde o Sorteio. Cruze os dedos! Você pode ser o próximo sorteado.</p>
+    </div>
+  </div>
+
+
+  <footer id="midias">
+    <div style="margin: auto;">
+      <a href=""><i class="fa-brands fa-instagram fa-lg"></i></a>
+      <a href=""><i class="fa-brands fa-discord fa-lg"></i></a>
+      <a href=""><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+      <a href=""><i class="fa-brands fa-facebook fa-lg"></i></a>
+      <!-- <p style="color: #F5F5F5;">Desenvolvido por Marcus Sandi</p> -->
   </footer>
-
 
 </body>
 
