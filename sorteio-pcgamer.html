@@ -95,6 +95,8 @@
     background: #46157eaf;
     color: #ffffff;
     box-sizing: border-box;
+    display: flex; 
+    flex-direction: column;
   }
 
   h1 {
@@ -154,6 +156,27 @@
     h2 {
       font-size: 30px;
     }
+
+    .container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+    }
+
+    .flex {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .flex > div {
+      flex: 1 2 300px;
+      margin: 10px;
+    }
+
   }
 </style>
 
@@ -250,54 +273,31 @@
   </div>
 
   <div class="row row-cols-1 row-cols-md-2 g-4" id="preco">
+    
+    <div class="col">
+      <div class="card">
+        <img src="images/card2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PC GAMER 6K</h5>
+          <p class="card-text">PC gamer, no valor de R$6.000,00 ou em dinheiro.</p> 
+        </div>
+      </div>
+      <p class="text-decoration-line-through fs-4 text-danger">De R$17,00</p>
+      <a href="https://pay.kiwify.com.br/txA6fJZ" style="text-decoration: dashed;"><button type="button" class="btn btn-outline-success">Por R$7,00</button></a>
+    </div>
+
     <div class="col">
       <div class="card">
         <img src="/images/card1.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">PC GAMER 15k</h5>
-          <p class="card-text">Setup PC gamer completo, com todos periférios no valor de R$15.000,00 ou se desejar,
-            resgatar o prêmio em dinheiro.</p>
+          <p class="card-text">Setup PC gamer completo, com todos periférios no valor de R$15.000,00 em dinheiro.</p>
         </div>
       </div>
       <p class="text-decoration-line-through fs-4 text-danger">De R$30,00</p>
-      <a href="https://pay.kiwify.com.br/cuET7dd"><button type="button" class="btn btn-outline-success">Por R$15,00</button></a>
-      
+      <a href="https://pay.kiwify.com.br/cuET7dd" style="text-decoration: dashed;"><button type="button" class="btn btn-outline-success">Por R$15,00</button></a>
     </div>
-    <div class="col">
-      <div class="card">
-        <img src="images/card2.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">PC GAMER 7K</h5>
-          <p class="card-text">PC gamer, no valor de R$7.000,00 ou se desejar, resgatar o prêmio em dinheiro.</p> 
-        </div>
-      </div>
-      <p class="text-decoration-line-through fs-4 text-danger">De R$17,00</p>
-      <a href="https://pay.kiwify.com.br/txA6fJZ"><button type="button" class="btn btn-outline-success">Por R$7,00</button></a>
-      
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="images/card3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Periféricos</h5>
-          <p class="card-text">R$1000,00 em periféricos que você quiser! ou se desejar, resgatar o prêmio em dinheiro.
-          </p>
-        </div>
-      </div>
-      <p class="text-decoration-line-through fs-4 text-danger">De R$12,00</p>
-      <button type="button" class="btn btn-outline-success">Por R$5,00</button>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="images/card4.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">PC GAMER 3K</h5>
-          <p class="card-text">PC gamer, no valor de R$3.000,00 ou se desejar, resgatar o prêmio em dinheiro.</p>
-        </div>
-      </div>
-      <p class="text-decoration-line-through fs-4 text-danger">De R$15,00</p>
-      <button type="button" class="btn btn-outline-success">Por R$7,00</button>
-    </div>
+
   </div>
 
 
@@ -314,35 +314,81 @@
 
   <div id="comofunciona" class="comofunciona">
     <h1>Como funciona?</h1>
-    <div>
+
+    <div class="container">
       <h2>1. Escolha o sorteio</h2>
       <p>Escolha o prêmio que gostaria de concorrer, verifique a descrição, regulamento do sorteio e fotos. Em caso de
         dúvidas entre em contato com o administrador.</p>
     </div>
 
-    <div>
+    <!-- <div class="container">
+      <h2>1</h2>
+      <p>
+        Escolha o prêmio que gostaria de concorrer, verifique a descrição, regulamento do sorteio e fotos. Em caso de
+        dúvidas entre em contato com o administrador.
+      </p>
+    </div> -->
+
+      <!-- <h2 style="font-size: 100px; text-align: center;">1</h2> -->
+      <!-- <div style="position: static;">
+        <p>Escolha o prêmio que gostaria de concorrer, verifique a descrição, regulamento do sorteio e fotos. Em caso de
+          dúvidas entre em contato com o administrador.</p>
+
+      </div> -->
+      
+    <div class="container">
       <h2>2. Selecione seus bilhetes</h2>
       <p>Você pode escolher quantos bilhetes desejar! Mais bilhetes, mais chances de ganhar.</p>
     </div>
 
-    <div>
+    <div class="container">
       <h2>3. Faça o pagamento</h2>
       <p>Faça o pagamento no(s) método(s) de pagamento(s) disponíveis no site.</p>
     </div>
 
-    <div>
+    <div class="container">
       <h2>4. Aguarde o sorteio</h2>
       <p>Aguarde o Sorteio. Cruze os dedos! Você pode ser o próximo sorteado.</p>
     </div>
+
   </div>
+
+  <!-- TESTE -->
+  <!-- <section class="flex">
+    <div>
+        <h2>1</h2>
+        <p>Legenda</p>
+    </div>
+    <div>
+        <h2>2</h2>
+        <p>Legenda</p>
+    </div>
+    <div>
+        <h2>3</h2>
+        <p>Legenda</p>
+    </div>
+    <div>
+      <h2>4</h2>
+      <p>Legenda</p>
+  </div>
+</section> -->
 
 
   <footer id="midias">
-      <a href="https://www.instagram.com/invites/contact/?i=2r0hean73jrq&utm_content=3oj6cop" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
-      <a href="https://discord.gg/nf5CNMak" target="_blank"><i class="fa-brands fa-discord fa-lg"></i></a>
-      <a href="https://wa.me/message/G7FSTM6VNAFNH1" target="_blank"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
-      <a href="https://www.facebook.com/leofurkinn?mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
-      <!-- <p style="color: #F5F5F5;">Desenvolvido por Marcus Sandi</p> -->
+
+
+
+    <div>
+      <p style="color: #fff; font-size: 30px;">Contato - Fale conosco!</p>
+    </div>
+
+    <div style="margin: auto;">
+      <a href="https://www.instagram.com/invites/contact/?i=2r0hean73jrq&utm_content=3oj6cop" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+      <a href="https://discord.gg/nf5CNMak" target="_blank"><i class="fa-brands fa-discord fa-2xl"></i></a>
+      <a href="https://wa.me/message/G7FSTM6VNAFNH1" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+      <a href="https://www.facebook.com/leofurkinn?mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+    </div>
+
   </footer>
 
 </body>
