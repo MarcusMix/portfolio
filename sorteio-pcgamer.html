@@ -19,6 +19,11 @@
 </head>
 <style>
   @font-face {
+    font-family: SecularOne-Regular;
+    src: url('fonts/SecularOne-Regular.ttf')
+  }
+
+  @font-face {
     font-family: BrickSans-Bold;
     src: url('fonts/BrickSans-Bold.otf') format('opentype');
   }
@@ -30,6 +35,7 @@
 
   :root {
     --cor-roxo: #a25cff;
+    --cor-verde: #3ac200;
   }
 
   body {
@@ -100,7 +106,7 @@
   }
 
   h1 {
-    font-family: BrickSans-Bold;
+    font-family: SecularOne-Regular;
     font-size: 80px;
     text-align: center;
     color: var(--cor-roxo);
@@ -144,40 +150,50 @@
   }
 
   @media (max-width: 768px) {
+
     h1 {
       font-size: 60px;
       margin: auto;
     }
 
-    .inicio p {
-      font-size: 15px;
-    }
-
-    h2 {
-      font-size: 30px;
-    }
-
-    .container {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      z-index: 1;
-    }
-
-    .flex {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .flex > div {
-      flex: 1 2 300px;
-      margin: 10px;
-    }
-
   }
+
+  .inicio p {
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .opcao{
+    flex: 1 2 400px;
+    margin: 10px;
+  }
+
+  .opcao {
+    width: 40%;
+    height: 250px;
+  }
+
+  #h2 {
+    /* text-align: center; */
+    /* padding: 10px; */
+    margin-bottom: 50px;
+  }
+
+  .opcao p {
+    text-align: center;
+  }
+
 </style>
 
 <body>
@@ -187,7 +203,7 @@
     <div class="container-fluid">
       <div class="icon">
         <i class="fa-sharp fa-solid fa-desktop fa-2xl"></i>
-        <a class="navbar-brand text-white" href="#">Mega Sorteios</a>
+        <a class="navbar-brand text-white" href="#">Busca Store</a>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -223,8 +239,8 @@
   </nav>
 
   <div class="inicio">
-    <h1 class="apresentacao">MEGA SORTEIOS</h1>
-    <p>Seus sonhos bem pertinho de você</p>
+    <h1 class="apresentacao">Busca Store</h1>
+    <p>Seus sonhos bem pertinho de você!</p>
   </div>
 
   <div id="carouselExampleDark" class="carousel carousel-transparent slide">
@@ -273,13 +289,12 @@
   </div>
 
   <div class="row row-cols-1 row-cols-md-2 g-4" id="preco">
-    
     <div class="col">
       <div class="card">
         <img src="images/card2.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">PC GAMER 6K</h5>
-          <p class="card-text">PC gamer, no valor de R$6.000,00 ou em dinheiro.</p> 
+          <p class="card-text">PC gamer, no valor de R$6.000,00 ou em dinheiro.</p>
         </div>
       </div>
       <p class="text-decoration-line-through fs-4 text-danger">De R$17,00</p>
@@ -312,15 +327,6 @@
     <br>
   </div>
 
-  <div id="comofunciona" class="comofunciona">
-    <h1>Como funciona?</h1>
-
-    <div class="container">
-      <h2>1. Escolha o sorteio</h2>
-      <p>Escolha o prêmio que gostaria de concorrer, verifique a descrição, regulamento do sorteio e fotos. Em caso de
-        dúvidas entre em contato com o administrador.</p>
-    </div>
-
     <!-- <div class="container">
       <h2>1</h2>
       <p>
@@ -335,43 +341,33 @@
           dúvidas entre em contato com o administrador.</p>
 
       </div> -->
-      
-    <div class="container">
+
+    <h1 id="comofunciona">Como funciona?</h1>
+
+    <div class="comofunciona container">
+
+      <div class="opcao">
+        <h2 id="h2">1. Escolha o sorteio</h2>
+        <p>Escolha o prêmio que gostaria de concorrer, verifique a descrição, regulamento do sorteio e fotos. Em caso de
+          dúvidas entre em contato com o administrador.</p>
+      </div>
+
+    <div class="opcao">
       <h2>2. Selecione seus bilhetes</h2>
       <p>Você pode escolher quantos bilhetes desejar! Mais bilhetes, mais chances de ganhar.</p>
     </div>
 
-    <div class="container">
+    <div class="opcao">
       <h2>3. Faça o pagamento</h2>
       <p>Faça o pagamento no(s) método(s) de pagamento(s) disponíveis no site.</p>
     </div>
 
-    <div class="container">
+    <div class="opcao">
       <h2>4. Aguarde o sorteio</h2>
       <p>Aguarde o Sorteio. Cruze os dedos! Você pode ser o próximo sorteado.</p>
     </div>
 
   </div>
-
-  <!-- TESTE -->
-  <!-- <section class="flex">
-    <div>
-        <h2>1</h2>
-        <p>Legenda</p>
-    </div>
-    <div>
-        <h2>2</h2>
-        <p>Legenda</p>
-    </div>
-    <div>
-        <h2>3</h2>
-        <p>Legenda</p>
-    </div>
-    <div>
-      <h2>4</h2>
-      <p>Legenda</p>
-  </div>
-</section> -->
 
 
   <footer id="midias">
