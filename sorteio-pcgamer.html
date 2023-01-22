@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sorteio PC Gamer">
+  <meta name="author" content="Marcus Sandi">
   <title>Sorteiro PC Gamer</title>
 
+  <!-- FAVICON -->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
   <!-- Estilo Bootstrap -->
@@ -40,19 +43,22 @@
     --cor-roxo: #a25cff;
     --cor-verde: #3ac200;
     --cor-vermelho: rgb(177, 65, 65);
+    --cor-branco: #fff;
+    --cor-preto: #000;
     --background-roxo: #46157eaf;
+    --background-dark: #05162b;
   }
 
   body {
     font-family: 'Poppins', sans-serif;
-    background-color: #05162b;
+    background-color: var(--background-dark);
     overflow-x: hidden;
   }
 
   .text-white,
   .nav-link,
   .dropdown-item {
-    color: rgb(255, 255, 255);
+    color: #fff;
   }
 
   .inicio {
@@ -82,7 +88,7 @@
   }
 
   .icon {
-    color: rgb(255, 255, 255);
+    color: var(--cor-branco);
   }
 
   .btn {
@@ -94,7 +100,7 @@
   .obs {
     font-size: 20px;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: var(--cor-branco);
     padding: auto;
     margin: 40px;
   }
@@ -109,7 +115,7 @@
     display: flex;
     justify-content: center;
     background: var(--background-roxo);
-    color: #fff;
+    color: var(--cor-branco);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -123,15 +129,15 @@
   }
 
   h2 {
-    font-size: 40px;
     font-family: Poppins;
+    font-size: 40px;
     text-align: center;
-    color: #fff;
+    color: var(--cor-branco);
   }
 
   p {
     text-align: center;
-    color: #000;
+    color: var(--cor-preto);
     padding: 0;
     margin: 0;
   }
@@ -141,7 +147,7 @@
   }
 
   .fa-brands {
-    color: #fff;
+    color: var(--cor-branco);
     padding: 20px;
   }
 
@@ -153,7 +159,7 @@
     }
 
     section {
-     width: 300px;
+     width: 350px;
     }
 
   }
@@ -165,29 +171,6 @@
   h2 {
     font-size: 30px;
   }
-
-  /* .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  } */
-
-  /* .comofunciona {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: auto;
-    text-align: center;
-  }
-
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  } */
 
   .container {
     display: flex;
@@ -202,7 +185,7 @@
   }
 
   .container p {
-    color: #fff;
+    color: var(--cor-branco);
     text-align: center;
     margin: 0 20%;
     padding: 20px;
@@ -212,7 +195,7 @@
 
 <body>
 
-
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary-dark bg-dark">
     <div class="container-fluid">
       <div class="icon">
@@ -334,7 +317,7 @@
           <img src="/images/card-pcgamer-completo.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">PC GAMER 15k</h5>
-            <p class="card-text">Setup PC gamer completo, com todos periférios escolhidas pelo ganhador no valor de R$15.000,00 em dinheiro.</p>
+            <p class="card-text">Setup PC gamer completo, com todos periférios escolhidas pelo ganhador no valor de R$15.000,00 ou em dinheiro.</p>
             <br>
           </div>
         </div>
@@ -391,7 +374,6 @@
     </div>
 
   </div>
-
 
   <!-- RODAPÉ -->
   <footer id="midias">
