@@ -203,9 +203,19 @@ footer a {
   text-decoration: none;
 }
 
+footer p {
+  text-align: center;
+}
+
 footer a:hover {
   text-decoration: underline;
   color: rgb(0, 225, 255);
+}
+
+@media (max-width: 768px) {
+  footer p {
+    font-size: 1rem;
+  }
 }
 
 /* botao projetos */
