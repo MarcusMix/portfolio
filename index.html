@@ -28,7 +28,7 @@
 <body>
   <!-- CABEÇALHO -->
   <header class="cabeca">
-    <nav class="navbar navbar-expand-lg  navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-lg  navbar-dark fixed-top bg-black bg-opacity-75">
       <div class="container-fluid">
         <a class="navbar-brand ms-3" href="https://github.com/MarcusMix">
           <img src="imgs/logo.png" alt="Logo Site Marcus Sandi" width="35" height="35">
@@ -51,9 +51,9 @@
             <li class="nav-item ms-5">
               <a id="link-nav" class="nav-link active" aria-current="page" href="#contato">Contato</a>
             </li>
-            <!-- <li class="nav-item ms-5">
-              <a id="link-nav" class="nav-link active" aria-current="page" href="pagina2.html">Blog</a>
-            </li>  em breve-->
+            <li class="nav-item ms-5">
+              <a id="link-nav" class="nav-link active" aria-current="page" href="links.html">Links</a>
+            </li>
             <li class="nav-item dropdown">
               <ul class="dropdown-menu">
                 <li><a id="link-nav" class="dropdown-item" href="#sobre-mim">Home</a></li>
@@ -77,7 +77,7 @@
       <h2 class="fs-1 text-center">Olá, eu sou o Marcus</h2>
       <h2 class="fs-1 text-center apresentacao">Desenvolvedor Web</h2>
       <div class="text-center icons" data-aos="flip-left">
-        <img src="imgs/eu-otimizado.jpg" id="img-principal" class="img fluid 
+        <img src="imgs/eu-otimizado.jpg" id="img-principal" class="img fluid
                 rounded-circle" width="400" alt="Marcus Sandi">
       </div>
       <p class="m-5 parag">Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> no Senac, estou no 2º
@@ -87,40 +87,60 @@
     </div>
   </section>
 
+
+
+
   <!-- PROJETOS  -->
-  <section id="projetos" class="flex efeito-vidro middle">
+  <section id="projetos" class="flex efeito-vidro">
+
     <h2 class="fs-1 m-4"><strong>Projetos</strong></h2>
     <p class="ms-4 me-4 projetos">Alguns dos meu projetos, desenvolvidos para aperfeiçoar meus conhecimentos e testar
       minhas capacidades de encarar novos desafios.</p>
-      <div> 
+
+
+      <div>
         <img class="img-projetos" src="imgs/calculadora_reactt.png" alt="Calculadora React"  data-aos="zoom-out-left">
         <p class="ms-2 mt-2">Calculadora React</p>
-        <a href="https://github.com/MarcusMix/modulo-react-web-moderno/tree/main/calculadora" class="btn btn1" target="_blank"> 🔗 Visualizar</a>
+        <div>
+          <a href="https://github.com/MarcusMix/modulo-react-web-moderno/tree/main/calculadora" class="btn btn1" target="_blank"> 🔗 Visualizar</a>
+        </div>
       </div>
+
+
       <div>
         <img class="img-projetos" src="imgs/flappy.png" alt="Projeto Flappy Bird" data-aos="zoom-out-left">
         <p class="ms-2 mt-2">Flappy Bird</p>
-        <a href="https://marcusmix.github.io/flappy-bird/" class="btn btn1" target="_blank"> 🔗 Visualizar</a>
+        <div>
+          <a href="https://marcusmix.github.io/flappy-bird/" class="btn btn1" target="_blank"> 🔗 Visualizar</a>
+        </div>
       </div>
     <div>
       <img class="img-projetos" src="imgs/android-otimizada.png" alt="Projeto Curiosidades Android" data-aos="zoom-out-left">
-      <p class="ms-2 mt-2">Curiosidades Android</p> 
-      <a href="https://marcusmix.github.io/projeto-android/" class="btn btn1" target="_blank"> 🔗 Visualizar</a>
+      <p class="ms-2 mt-2">Curiosidades Android</p>
+      <div>
+        <a href="https://marcusmix.github.io/projeto-android/" class="btn btn1" target="_blank"> 🔗 Visualizar</a>
+      </div>
     </div>
     <div>
       <img class="img-projetos" src="imgs/switch-otimizada.png" alt="Projeto Empresa Junior Senac" data-aos="zoom-out-left">
       <p class="ms-2 mt-2">Empresa Junior Senac</p>
-      <a href="https://marcusmix.github.io/switch-site/" class="btn btn1" target="_blank"> 🔗 Visualizar</a>
+      <div>
+        <a href="https://marcusmix.github.io/switch-site/" class="btn btn1" target="_blank"> 🔗 Visualizar</a>
+      </div>
     </div>
     <div>
       <img class="img-projetos" src="imgs/todolist-otimizada.png" alt="Projeto To-do list" data-aos="zoom-out-left">
       <p class="ms-2 mt-2">To-do list</p>
-      <a href="https://marcusmix.github.io/lista-de-tarefas/" class="btn btn1" target="_blank"> 🔗 Visualizar</a>
+      <div>
+        <a href="https://marcusmix.github.io/lista-de-tarefas/" class="btn btn1" target="_blank"> 🔗 Visualizar</a>
+      </div>
     </div>
     <div>
       <img class="img-projetos" src="imgs/cordel-otimizada.png" alt="Projeto Cordel Moderno - Por Milton Duarte" data-aos="zoom-out-left">
       <p class="ms-2 mt-2">Cordel</p>
-      <a href="https://marcusmix.github.io/projeto-cordel/" class="btn btn1" target="_blank"> 🔗 Visualizar</a>
+      <div>
+        <a href="https://marcusmix.github.io/projeto-cordel/" class="btn btn1" target="_blank"> 🔗 Visualizar</a>
+      </div>
     </div>
     <div>
       <!-- <div class="mt-5 lds-roller">
@@ -214,10 +234,10 @@
   <!-- RODAPÉ  -->
   <footer class="efeito-vidro-footer">
     <div>
-      <p>Site criado por <a href="https://github.com/MarcusMix" target="_blank">Marcus Sandi</a></p>
+      <p>Copyright © <a href="https://github.com/MarcusMix" target="_blank" style="color: black;">Marcus Sandi</a> todos os direitos reservados.</p>
     </div>
   </footer>
-  
+
   <!-- JQUERY  -->
   <!-- <script src="script/js/jquery-3.6.1.min.js" type="text/javascript"></script> -->
 

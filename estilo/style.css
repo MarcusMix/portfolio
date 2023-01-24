@@ -104,13 +104,17 @@ section, main {
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.247);
 }
 
+/* section > div > p {
+  text-align: center;
+} */
+
 .cabeca {
     color: white;
     margin-top: 100px;
 }
 
-.habilidades, 
-.contato, 
+.habilidades,
+.contato,
 .projetos  {
     font-weight: 600;
 }
@@ -173,7 +177,7 @@ section, main {
     transition: background-size 350ms;
     --bg-h: 100%;
 }
-  
+
 #link-nav:where(:hover, :focus-visible) {
     background-size: 100% var(--bg-h);
     background-position-x: left;
@@ -211,18 +215,19 @@ footer a:hover {
 
 .btn {
   width: 50%;
+  height: 50%;
   position: relative;
+  margin: auto;
   display: block;
   color: white;
   font-size: 12px;
-  font-family: "montserrat";
+  /* font-family: "Poppins"; */
   text-decoration: none;
-  margin: 20px 0;
   border: 2px solid #75e3ff;
   padding: 14px 30px;
   text-transform: uppercase;
   overflow: hidden;
-  transition: 1s all ease;
+  transition: .1s all ease;
 }
 
 .btn::before {
