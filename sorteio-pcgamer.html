@@ -21,6 +21,12 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://wa.me/message/G7FSTM6VNAFNH1" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+      z-index:1000;" target="_blank">
+    <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+</a>
 </head>
 <style>
 
@@ -43,10 +49,12 @@
     --cor-roxo: #a25cff;
     --cor-verde: #3ac200;
     --cor-vermelho: rgb(177, 65, 65);
-    --cor-branco: #fff;
+    --cor-branco: #cfcfcf;
+    /* #edebe6; */
     --cor-preto: #000;
     --background-roxo: #46157eaf;
     --background-dark: #05162b;
+    --background-verde: #75cd4d;
   }
 
   body {
@@ -61,13 +69,8 @@
     color: #fff;
   }
 
-  .inicio {
-    font-size: 20px;
-    font-weight: 600;
-  }
-
   section {
-    width: 800px;
+    width: 1050px;
     margin: auto;
   }
 
@@ -95,6 +98,8 @@
     display: flex;
     margin: auto;
     margin-top: 10px;
+    padding: 15px;
+    font-size: 25px;
   }
 
   .obs {
@@ -105,30 +110,21 @@
     margin: 40px;
   }
 
-  .p {
-    font-size: 20px;
-    color: var(--cor-vermelho)
-  }
-
-  footer {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    background: var(--background-roxo);
-    color: var(--cor-branco);
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-  }
-
   h1 {
+    font-family: BrickSans-Bold;
+    font-size: 100px;
+    text-align: center;
+    color: var(--cor-branco);
+  }
+
+  h2 {
     font-family: BrickSans-Bold;
     font-size: 80px;
     text-align: center;
     color: var(--cor-roxo);
   }
 
-  h2 {
+  h3 {
     font-family: Poppins;
     font-size: 40px;
     text-align: center;
@@ -138,8 +134,6 @@
   p {
     text-align: center;
     color: var(--cor-preto);
-    padding: 0;
-    margin: 0;
   }
 
   h5 {
@@ -151,24 +145,11 @@
     padding: 20px;
   }
 
-  @media (max-width: 768px) {
-
-    h1 {
-      font-size: 60px;
-      margin: auto;
-    }
-
-    section {
-     width: 350px;
-    }
-
-  }
-
   .inicio p {
-    font-size: 15px;
+    font-size: 25px;
   }
 
-  h2 {
+  h3 {
     font-size: 30px;
   }
 
@@ -191,22 +172,59 @@
     padding: 20px;
   }
 
+  footer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background: var(--background-roxo);
+    color: var(--cor-branco);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+
+  footer p {
+    color: var(--cor-preto);
+  }
+
+  @media (max-width: 768px) {
+
+    h1 {
+      font-size: 60px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 40px;
+      margin: auto;
+    }
+
+    .inicio p {
+    font-size: 15px;
+    }
+
+    section {
+      width: 350px;
+    }
+
+  }
 </style>
 
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary-dark bg-dark">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary-black bg-black sticky-top">
     <div class="container-fluid">
       <div class="icon">
         <a class="navbar-brand text-white" href="#"><img src="images/buscaicon.png" alt="logo-busca-store" >Busca Store</a>
       </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav bg-dark">
+        <ul class="navbar-nav bg-black">
           <li class="nav-item">
             <a class="nav-link" href="#comofunciona">Como funciona?</a>
           </li>
@@ -216,12 +234,12 @@
           <li class="nav-item">
             <a class="nav-link" href="#midias">Contatos</a>
           </li>
-          <li class="nav-item dropdown bg-dark">
-            <a class="nav-link dropdown-toggle bg-dark" href="#" role="button" data-bs-toggle="dropdown"
+          <li class="nav-item dropdown bg-white">
+            <a class="nav-link dropdown-toggle bg-black" href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Sorteios
             </a>
-            <ul class="dropdown-menu bg-dark">
+            <ul class="dropdown-menu bg-black">
               <li><a class="dropdown-item" href="#">Computadores</a></li>
               <li><a class="dropdown-item" href="#">Mouse</a></li>
               <li><a class="dropdown-item" href="#">Teclados</a></li>
@@ -282,9 +300,8 @@
     </div>
   </section>
 
-  <p class="p">Fotos merementes ilustrativas*</p>
   <div class="outros">
-    <h1>Mais detalhes dos sorteios...</h1>
+    <h2>Mais detalhes das premiações</h2>
   </div>
 
   <!-- CARDS -->
@@ -298,14 +315,13 @@
           <div class="card-body">
             <h5 class="card-title">PC GAMER 6k</h5>
             <p class="card-text">PC gamer, apenas o computador, com as peças escolhidas pelo ganhador no valor de R$6.000,00 ou em dinheiro.</p>
-            <br>
           </div>
         </div>
         <p class="text-decoration-line-through fs-4 text-danger">De R$17,00</p>
-        <a href="https://pay.kiwify.com.br/txA6fJZ" style="text-decoration: dashed;">
+        <a href="https://pay.kiwify.com.br/txA6fJZ" style="text-decoration: none;">
             <button
               type="button"
-              class="btn btn-outline-success"
+              class="btn btn-success"
             >Por R$7,00
           </button>
         </a>
@@ -318,14 +334,13 @@
           <div class="card-body">
             <h5 class="card-title">PC GAMER 15k</h5>
             <p class="card-text">Setup PC gamer completo, com todos periférios escolhidas pelo ganhador no valor de R$15.000,00 ou em dinheiro.</p>
-            <br>
           </div>
         </div>
         <p class="text-decoration-line-through fs-4 text-danger">De R$30,00</p>
-        <a href="https://pay.kiwify.com.br/cuET7dd" style="text-decoration: dashed;">
+        <a href="https://pay.kiwify.com.br/cuET7dd" style="text-decoration: none;">
           <button
             type="button"
-            class="btn btn-outline-success"
+            class="btn btn-success"
           >Por R$15,00
           </button>
         </a>
@@ -336,8 +351,8 @@
 
 
   <div class="obs">
-    <h1>Imagens Ilustrativas</h1>
-    <p style="color: white; margin-top: 30px;">
+    <h2>Imagens Ilustrativas</h2>
+    <p style="color: var(--cor-branco); margin-top: 30px;">
       Todo e qualquer uso de imagem irregular sem a altorização, é crime. <br>
       Fique por dentro dos nossos sorteios via Instagram e facebook. <br>
       Lembrando que este será o primeiro de muitos sorteios realizados, <br>
@@ -349,27 +364,27 @@
 
 
   <!-- COMO FUNCIONA -->
-  <h1 id="comofunciona">Como funciona?</h1>
+  <h2 id="comofunciona">Como funciona?</h2>
 
   <div class="container">
     <div>
-      <h2>1. Escolha o sorteio</h2>
+      <h3>1. Escolha o sorteio</h3>
       <p>Escolha o prêmio que gostaria de concorrer, verifique a descrição, regulamento do sorteio e fotos. Em caso de
         dúvidas entre em contato com o administrador.</p>
     </div>
 
     <div>
-      <h2>2. Selecione seus bilhetes</h2>
+      <h3>2. Selecione seus bilhetes</h3>
       <p>Você pode escolher quantos bilhetes desejar! Mais bilhetes, mais chances de ganhar.</p>
     </div>
 
     <div>
-      <h2>3. Faça o pagamento</h2>
+      <h3>3. Faça o pagamento</h3>
       <p>Faça o pagamento no(s) método(s) de pagamento(s) disponíveis no site.</p>
     </div>
 
     <div>
-      <h2>4. Aguarde o sorteio</h2>
+      <h3>4. Aguarde o sorteio</h3>
       <p>Aguarde o Sorteio. Cruze os dedos! Você pode ser o próximo sorteado.</p>
     </div>
 
@@ -379,7 +394,7 @@
   <footer id="midias">
     <!-- CONTATO -->
     <div>
-      <p style="color: #fff; font-size: 30px;">Contato - Fale conosco!</p>
+      <p style="color: #fff; font-size: 30px;">FALE CONOSCO</p>
     </div>
 
     <div style="margin: auto;">
@@ -392,6 +407,8 @@
       <!-- FACEBOOK -->
       <a href="https://www.facebook.com/leofurkinn?mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a>
     </div>
+
+    <p style="color: #626970;"> Copyright © Busca Store todos os direitos reservados.</p>
 
   </footer>
 
