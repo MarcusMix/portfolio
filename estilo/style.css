@@ -15,7 +15,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #0d0d0d;
   margin: 0 auto;
-  padding-top: 0;
+  /* padding-top: 0; */
   background: url('../imgs/pexels-danny-meneses-943096.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -91,23 +91,18 @@ body {
   text-align: center;
 }
 
-section, main {
+section {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
   max-width: 800px;
   min-width: 300px;
-  margin-top: 50px;
+  margin-top: 30px;
   flex: 1 2 300px;
   padding: 10px;
   background-color:#949ba6;
   border-radius: 10px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.247);
-}
-
-.cabeca {
-  color: white;
-  margin-top: 100px;
 }
 
 .habilidades,
