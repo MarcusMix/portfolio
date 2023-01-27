@@ -13,6 +13,7 @@
 body {
   /* font-family: 'Raleway', sans-serif; */
   font-family: 'Poppins', sans-serif;
+  animation: fadeIn 0.7s both;
   color: #0d0d0d;
   margin: 0 auto;
   /* padding-top: 0; */
@@ -59,7 +60,7 @@ body {
 }
 
 .efeito-vidro-footer {
-  background: #f2685c9c;
+  background: #75e3ff7a;
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 13.5px );
   -webkit-backdrop-filter: blur( 13.5px );
@@ -188,7 +189,7 @@ footer {
   margin-top: 30px;
   display: flex;
   justify-content: center;
-  background-color: #f2695c;
+  background-color: #75e3ff;
   padding-top: 15px;
   padding-right: 15px;
 }
@@ -350,3 +351,31 @@ div > .lds-roller {
   }
 }
 /* animação loading  */
+
+/* Animação reload */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* Scroll */
+
+::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); */
+  background-color: transparent;
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #75e3ff;
+}
