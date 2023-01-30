@@ -7,22 +7,26 @@ VanillaTilt.init(document.querySelectorAll(".img-projetos"), {
   speed: 300,
 }) 
 
-// VanillaTilt.init(document.querySelectorAll(".icons"), {
-//   max: 30,
-//   speed: 600,
-// }) 
-
 // DIGITACAO EFEITO 
 
-function typeWriter(elemento) {
-  const textoArray = elemento.innerHTML.split('');
-  elemento.innerHTML = '';
-  textoArray.forEach((letra, i) => {
-    setTimeout(() => elemento.innerHTML += letra, 160 * i);
+document.addEventListener('DOMContentLoaded', () => {
+  new TypeIt('.animated', {
+    speed: 100,
+    loop: true
   })
-}
-
-const titulo = document.querySelector('.apresentacao')
-typeWriter(titulo);
-
-typeWriter()
+    .type('Programador ReactJs', {delay: 700})
+    .delete(7)
+    .type('Typescri', {delay: 1000 })
+    .move(-3)
+    .pause(500)
+    .delete(1)
+    .type('S')
+    .move(3)
+    .type('pt', {delay: 500})
+    .move(-6, {delay: 300})
+    .delete(4)
+    .type('Java', {delay: 300})
+    .move(6)
+    .delete(21)
+  .go()
+})
