@@ -136,9 +136,14 @@ section {
   color: #61DBFB;
 }
 
-.vue > i:hover{
+.typescript svg {
+  width: 57px;
+  border-radius: 7px;
+}
+
+svg:hover path {
+  fill: #007acc;
   transition: 0.5s;
-  color: #42b883;
 }
 
 .link-contato {
